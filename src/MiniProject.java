@@ -1,7 +1,7 @@
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 class Garment {
 
@@ -96,9 +96,9 @@ class Customer {
         System.out.println("Order Placed");
     }
 
-//    List<Order> viewOrders() {
-//        
-//    }
+    List<Order> viewOrders() {
+        return null;
+    }
 }
 
 class Inventory {
@@ -126,6 +126,13 @@ class Inventory {
 public class MiniProject {
 
     public static void main(String[] args) {
+        Garment g1 = new Garment();
+        g1.name = "Silk";
+        g1.description = "Good Product";
+        g1.price = 600;
+        double x = g1.calculateDiscountPrice(20);
+        System.out.println(x);
 
     }
+
 }
