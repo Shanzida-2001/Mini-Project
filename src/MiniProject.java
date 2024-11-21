@@ -98,6 +98,14 @@ class Customer {
     public String email;
     public String phone;
 
+    void placeOrder(Order order) {
+        order.printOrderDetails();
+        System.out.println("Order Placed");
+    }
+
+//    List<Order> viewOrders() {
+//        
+//    }
 }
 
 class Inventory {
