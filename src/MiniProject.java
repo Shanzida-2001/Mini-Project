@@ -3,13 +3,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class MiniProject {
-
-    public static void main(String[] args) {
-
-    }
-}
-
 class Garment {
 
     public String id;
@@ -127,5 +120,12 @@ class Inventory {
             }
         }
         return null;
+    }
+}
+
+public class MiniProject {
+
+    public static void main(String[] args) {
+
     }
 }
