@@ -66,6 +66,18 @@ class Order {
     public Date orderDate;
     public List<Garment> garments = new ArrayList<>();
     private double totalAmount;
+
+    void addGarment(Garment garment) {
+        garments.add(garment);
+    }
+
+    double calculateTotalAmount() {
+        for (Garment g : garments) {
+            totalAmount = totalAmount + g.price;
+        }
+        return totalAmount;
+    }
+
 }
 
 class Customer {
