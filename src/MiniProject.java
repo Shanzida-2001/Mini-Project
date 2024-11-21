@@ -70,6 +70,11 @@ class Order {
 
 class Customer {
 
+    public String customerId;
+    public String name;
+    public String email;
+    public String phone;
+
 }
 
 class Inventory {
