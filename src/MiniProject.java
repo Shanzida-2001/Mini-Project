@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class MiniProject {
@@ -61,6 +62,10 @@ class Supplier {
 
 class Order {
 
+    public String orderId;
+    public Date orderDate;
+    public List<Garment> garments = new ArrayList<>();
+    private double totalAmount;
 }
 
 class Customer {
